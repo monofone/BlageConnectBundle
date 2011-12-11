@@ -1,4 +1,7 @@
-{# empty Twig template #}
+<div class="badge">
 {% for badge in badges %}
-<img src="{{ badge.picture_url }}" alt="{{badge.name}}" />
+  <a href="{{ badge.url }}" title="{{ badge.name }}">
+    <img src="{{ badge.picture_url }}" alt="{{badge.name}}" />
+  </a>
 {% endfor %}
+</div>
