@@ -3,29 +3,23 @@
 namespace Blage\ConnectBundle\Service;
 
 /**
- * represents a Badge as given to the user by Sensio
+ * Description of Club
+ *
+ * @author srohweder
  */
-class Badge
+class Club
 {
+
     protected $url;
-    
     protected $pictureUrl;
-    
     protected $name;
- 
-    /**
-     *
-     * @param string $url
-     * @param string $pictureUrl
-     * @param string $name 
-     */
+
     function __construct($url, $pictureUrl, $name)
     {
         $this->url = $url;
         $this->pictureUrl = $pictureUrl;
         $this->name = $name;
     }
-
     
     public function getUrl()
     {
@@ -56,6 +50,7 @@ class Badge
     {
         $this->name = $name;
     }
+
 
 
 }

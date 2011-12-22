@@ -1,0 +1,10 @@
+<div class="sensio profile">
+  <span class="name"><a href="{{ profile.url }}" title="{{ profile.displayName }}">{{ profile.displayName }}</a></span>
+  <div class="picture"><img src="{{ profile.photoUrl }}" alt="{{ profile.displayName }}" /></div>
+  <span class="date">{{ profile.memberSince|date('d.m.Y') }}</span>
+  <span class="url">{{ profile.websiteUrl }}</span>
+  <span class="url">{{ profile.blogUrl }}</span>
+  <span class="url">{{ profile.twitterUrl }}</span>
+  <span class="url">{{ profile.githubUrl }}</span>
+  <span class="url">{{ profile.linkedinUrl }}</span>
+</div>

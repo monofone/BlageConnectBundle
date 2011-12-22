@@ -9,10 +9,9 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 class ConnectController extends Controller
 {
     /**
-     * @Route("/hello/{name}")
      * @Template()
      */
-    public function ownSensioBadgeAction($name = '')
+    public function ownSensioBadgeAction()
     {
         $sensio = $this->get('blage_connect.sensio');
         /* @var Blage\ConnectBundle\Service\SensioConnectService */
@@ -20,5 +19,15 @@ class ConnectController extends Controller
         
         
         return $this->render('BlageConnectBundle:Connect:badges.html.twig',array('badges' => $badges));
+    }
+    
+    public function ownSensioProfileAction()
+    {
+        $sensio = $this->get('blage_connect.sensio');
+        /* @var Blage\ConnectBundle\Service\SensioConnectService */
+        $profile = $sensio->getProfile();
+        
+        
+        return $this->render('BlageConnectBundle:Connect:profile.html.twig',array('profile' => $profile));
     }
 }
