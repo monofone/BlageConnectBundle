@@ -15,6 +15,11 @@ After finishing the update add the Bundle to your Kernel config
 
     new Blage\ConnectBundle\BlageConnectBundle(),
 
+Now write in your config.yml the username
+
+    blage_connect:
+        profile_name: <your_username>
+
 Then, in a Template just render the badges for example as follows:
 
     {% render 'BlageConnectBundle:Connect:ownSensioBadge' %}
