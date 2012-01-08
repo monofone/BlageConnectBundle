@@ -19,25 +19,25 @@ then run the installer
 
 update your `autoload.yml`.
 
-    ```php
-    $loader->registerNamespaces(array(
-        //...
-        'Blage'            => __DIR__.'/../vendor/bundles'
-        //...
-    ));
-    ```
+```php
+$loader->registerNamespaces(array(
+    //...
+    'Blage'            => __DIR__.'/../vendor/bundles'
+    //...
+));
+```
 
 ##via [`composer`](https://github.com/composer/composer)##
 
 update your `composer.json` to include this Bundle.
 
-    ``` json
-    {
-        "require": {
-            "monofone/connect-bundle": "*"
-        }
+``` json
+{
+    "require": {
+        "monofone/connect-bundle": "*"
     }
-    ```
+}
+```
 
 get composer and update your dependencies.
 
@@ -49,9 +49,9 @@ get composer and update your dependencies.
 
 After Installation add the Bundle to your Kernel config in `AppKernel.php`
 
-    ```php
-    new Blage\ConnectBundle\BlageConnectBundle(),
-    ```
+```php
+new Blage\ConnectBundle\BlageConnectBundle(),
+```
 
 Now configure the bundle in your `config.yml`.
 
