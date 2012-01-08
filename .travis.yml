@@ -10,6 +10,6 @@ env:
   - SYMFONY_VERSION=origin/master
 
 before_script:
-  - php vendors/vendors.php
+  - php vendor/vendors.php
 
 script: phpunit
