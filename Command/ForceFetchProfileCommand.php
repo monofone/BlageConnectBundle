@@ -29,11 +29,11 @@ class ForceFetchProfileCommand extends ContainerAwareCommand
             ))
             ->setDescription('fetches the sensio connect profile')
             ->setHelp(<<<EOT
-The <info>kaoz4:force-fetch-profile</info> command fetches the sensio profile for a given username.
+The <info>blage:force-fetch</info> command fetches the sensio profile for a given username.
 
 It is useful to force the caching via a cron job rather than letting a visitor request do it.
 
-<info>php app/console kaoz4:force-fetch-sensio digitalkaoz</info>
+<info>php app/console blage:force-fetch digitalkaoz</info>
 EOT
             )
             ->setName('blage:force-fetch')
