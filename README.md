@@ -45,26 +45,24 @@ get composer and update your dependencies.
     $ php composer.phar update
 
 
-##Activation##
+Install Zend Cache
+------------------
 
-After Installation add the Bundle to your Kernel config in `AppKernel.php`
+see https://github.com/KnpLabs/KnpZendCacheBundle for installation.
 
-```php
-new Blage\ConnectBundle\BlageConnectBundle(),
-```
+Configuration
+-------------
 
-Now configure the bundle in your `config.yml`.
+Define your Sensio `username` in your `config.yml`
 
     blage_connect:
         profile_name: <your_username>
 
-##Usage##
-
-Then, in a Template just render the badges for example as follows:
+for just rendering Badges simply use this in your template
 
     {% render 'BlageConnectBundle:Connect:ownSensioBadge' %}
 
-or your profiledata with:
+or for your profiledata with:
 
     {% render 'BlageConnectBundle:Connect:ownSensioProfile' %}
 
