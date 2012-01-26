@@ -69,7 +69,7 @@ or for your profiledata with:
 Tests
 -----
 
-    $ vendor/vendors.php
+    $ php vendors.php
     $ phpunit
 
 License

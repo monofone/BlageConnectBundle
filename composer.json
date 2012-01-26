@@ -14,9 +14,13 @@
     ],
     "require": {
         "php": ">=5.3.0",
-        "symfony/symfony": ">=2.0"
+        "symfony/framework-bundle":     ">=2.0,<2.1-dev",
+        "symfony/dependency-injection": ">=2.0,<2.1-dev"
+
     },
     "autoload": {
-        "psr-0": { "Blage\\ConnectBundle": "./" }
-    }
+        "psr-0": { "Blage\\ConnectBundle": "" }
+    },
+    "target-dir": "Blage/ConnectBundle"
+
 }
