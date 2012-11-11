@@ -19,7 +19,7 @@
 
         <service id="blage_connect.cache" class="%blage_connect.cache.class%">
             <argument type="service" id="blage_connect.sensio"/>
-            <argument type="service" id="knp_zend_cache.manager"/>
+<!--            <argument type="service" id="knp_zend_cache.manager"/>-->
             <argument>%blage_connect.cache.name%</argument>
         </service>
     </services>
