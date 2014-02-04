@@ -16,8 +16,6 @@ class SensioProfileMapper
         $profile->setDisplayName($profileData->display_name);
         $profile->setUrl($profileData->url);
         $profile->setPhotoUrl($profileData->photo_url);
-        $profile->setFirstName($profileData->first_name);
-        $profile->setLastName($profileData->last_name);
         $profile->setCompany($profileData->company);
         $profile->setCountry($profileData->country);
         $profile->setBiography($profileData->biography);
